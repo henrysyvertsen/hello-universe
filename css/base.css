@@ -16,5 +16,24 @@ html {
 
 .heading-1 {
     font-size: 3em;
- }
- 
+}
+
+/* nav styles */
+.header	{
+	background: rebeccapurple;
+	padding: 10px;
+}
+
+.nav__item {
+	display: inline-block;
+}
+
+.nav__link {
+	color: white;
+	text-decoration: none;
+}
+
+.nav__item + .nav__item {
+	margin-left: 20px;
+}
+
