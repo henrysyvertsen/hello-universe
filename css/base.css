@@ -31,6 +31,12 @@ html {
 .nav__link {
 	color: white;
 	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.nav__link--active,
+.nav__link:hover {
+	opacity: 0.5;
 }
 
 .nav__item + .nav__item {
