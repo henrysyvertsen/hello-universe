@@ -1,5 +1,7 @@
 /* Base Styles */
 
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
+
 body, html {
     height: 100%;
 }
@@ -14,14 +16,53 @@ html {
     background: #07a0ba;
 }
 
+body {
+	font-family: 'PT Serif', serif;
+}
+
+img {
+	margin-top: 20px;
+	max-width: 100%;
+}
+
 .heading-1 {
     font-size: 3em;
+    position: relative;
+}
+
+.heading-1 + p {
+	position: relative;
+}
+
+.main {
+    background: url(../media/tree.jpeg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.main:before {
+	background: rebeccapurple;
+	bottom: 0;
+	left: 0;
+	opacity: .8;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@media (min-width: 500px) {
+	.main {
+		padding: 100px 20px;
+	}
 }
 
 /* nav styles */
 .header	{
 	background: rebeccapurple;
-	padding: 10px;
+	padding: 20px;
 }
 
 .nav__item {
